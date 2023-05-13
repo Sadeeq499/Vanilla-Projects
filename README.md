@@ -1,0 +1,2 @@
+# Vanilla-Projects
+These projects showcase my skills in building applications using vanilla technologies, without relying on frameworks or libraries. They demonstrate my ability to work with core web technologies such as HTML, CSS, and JavaScript. By sharing these projects on GitHub, I aim to showcase my coding abilities, share my work with others, and potentially collaborate with fellow developers.
