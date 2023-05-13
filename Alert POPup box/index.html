@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <script src="https://kit.fontawesome.com/cd155faa00.js" crossorigin="anonymous"></script>
+    <title>Custom Alert Popup box</title>
+</head>
+<body>
+    <a href="#"  class="click">Click me</a>
+    <div class="popup_box">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <h2>Your account will be deleted permanently</h2>
+        <label>Are you Sure to proceed?</label>
+        <div class="btns">
+            <a href="#" class="btn1">Cancel</a>
+            <a href="#" class="btn2">Delete Account</a>
+        </div>
+    </div>
+
+<script>
+
+
+
+
+    var buttn = document.querySelector('.click');
+    buttn.addEventListener('click', PopUp);
+
+    function PopUp()
+    {
+       var pop= document.querySelector('.popup_box');
+       pop.style ="opacity:1"; 
+       pop.style.pointerEvents = "auto";
+
+    }
+    
+
+   var cnclbtn = document.querySelector('.btn1');
+
+    cnclbtn.addEventListener('click', Pop_Down);
+    function Pop_Down(){
+     var pop_d= document.querySelector('.popup_box');
+       pop_d.style ="opacity:0";
+       pop_d.style.pointerEvents = "none";
+    }
+
+    var dltbtn = document.querySelector(".btn2");
+    dltbtn.addEventListener('click', Delet);
+    function Delet(){
+        var pop_d= document.querySelector('.popup_box');
+       pop_d.style ="opacity:0";
+       pop_d.style.pointerEvents = "none";
+    alert("YOur ACCount has been Deleted Successfuly");
+         buttn.textContent ="Account Deleted";
+    }
+    </script>
+</body>
+</html>

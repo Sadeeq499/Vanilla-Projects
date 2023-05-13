@@ -1,0 +1,42 @@
+
+@import "partials/variables";
+@import "partials/maxin";
+
+
+.container{
+
+    @include divison(400px, 400px, $primary, relative,30%,30%);
+
+    .sub_1{
+        @include divison(350px, 350px,$secondery, absolute,7%, 7%);
+
+        .sub_2{
+            @include divison(300px, 300px, $primary, absolute,7%, 7%);
+
+            .sub_3{
+                @include divison(250px, 250px,$secondery , absolute,7%, 7%);
+
+                .sub_4{
+                    @include divison(200px, 200px, $primary, absolute,10%, 10%);
+                    .sub_5{
+                        @include divison(150px, 150px, $secondery, absolute, 10%, 10%);
+
+                        .sub_6{
+
+                            @include divison(100px, 100px, $primary, absolute, 15%, 15%);
+                            .sub_7{
+
+                                @include divison(50px, 50px, $secondery, absolute, 25%, 25%);
+
+                                .sub_8{
+
+                                    @include divison(25px, 25px, $primary, absolute, 28%, 28%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

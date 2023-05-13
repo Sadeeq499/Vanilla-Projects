@@ -1,0 +1,8 @@
+@mixin  divison ($width, $height, $color, $position, $t ,$l){
+    width: $width;
+    height: $height;
+    background:$color;
+    position: $position;
+    top: $t;
+    left: $l;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navigation Menu</title>
+</head>
+<body>
+    <!--Navigation menu-->
+    <nav>
+        <label class="logo">SaQi X</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Feedback">Feedback</a></li>
+        </ul>
+    </nav>    
+
+    <!--Contant-->
+    <div class="sec1"></div>
+    <h1 id="About">About</h1>
+    <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, vero. Iusto possimus ipsam ducimus illum rem eligendi dolor neque quod asperiores dolore. Ad velit repellat corporis eos magni inventore nostrum?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, minima necessitatibus optio natus eligendi non, tenetur tempora sit accusamus iste perspiciatis provident ullam eaque quisquam id? Laboriosam maxime doloremque sunt?
+    </p>
+    
+    
+    <div class="sec2"></div>
+    <h1 id="Services">Services</h1>
+    <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, vero. Iusto possimus ipsam ducimus illum rem eligendi dolor neque quod asperiores dolore. Ad velit repellat corporis eos magni inventore nostrum?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, minima necessitatibus optio natus eligendi non, tenetur tempora sit accusamus iste perspiciatis provident ullam eaque quisquam id? Laboriosam maxime doloremque sunt?
+    </p>
+
+
+    <div class="sec3"></div>
+    <h1 id="Contact">Contact</h1>
+    <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, vero. Iusto possimus ipsam ducimus illum rem eligendi dolor neque quod asperiores dolore. Ad velit repellat corporis eos magni inventore nostrum?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, minima necessitatibus optio natus eligendi non, tenetur tempora sit accusamus iste perspiciatis provident ullam eaque quisquam id? Laboriosam maxime doloremque sunt?
+    </p>
+
+    <div class="sec4"></div>
+    <h1 id="Feedback">Feedback</h1>
+    <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, vero. Iusto possimus ipsam ducimus illum rem eligendi dolor neque quod asperiores dolore. Ad velit repellat corporis eos magni inventore nostrum?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, minima necessitatibus optio natus eligendi non, tenetur tempora sit accusamus iste perspiciatis provident ullam eaque quisquam id? Laboriosam maxime doloremque sunt?
+    </p>
+
+
+
+    <script>
+
+        var scroll1 = window.pageYOffset;
+        window.onscroll=function(){
+            var scroll2= window.pageYOffset;
+            if(scroll1>scroll2)
+            {
+                document.querySelector('nav').style.top="0";
+            } else{
+                document.querySelector('nav').style.top ="-100px";
+            }
+            scroll1= scroll2;
+        }
+
+    </script>
+</body>
+</html>

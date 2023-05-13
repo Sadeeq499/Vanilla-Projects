@@ -1,0 +1,67 @@
+/* ----google fonts---- */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@800&family=Ubuntu:wght@300&display=swap');
+/* ------------first Section-------------------- */
+/* navigation  */
+.logo{
+    font-weight: bolder;
+    /* font-size: 40px; */
+}
+.navigation-links{
+font-family: Georgia, 'Times New Roman', Times, serif;
+ margin: 0 15px;
+ font-weight: bold;
+}
+
+
+/* carousel imges */
+.carusel-imges{
+    object-fit: contain;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/* -------------------section 2 (second)-------- */
+
+.comb-text{
+    text-align: center;
+    color: green;
+}
+.comb-text>h1{
+    font-family: 'Qwigley', cursive;
+    color: rgba(241, 172, 92, 0.521);
+    
+}
+
+/* cards */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }
